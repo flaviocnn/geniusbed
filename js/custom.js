@@ -1,7 +1,7 @@
 
  /* jQuery Pre loader
   -----------------------------------------------*/
-$(window).load(function(){
+$(window).on('load', function(){
     $('.preloader').fadeOut(1000); // set duration in brackets    
 });
 
@@ -28,21 +28,7 @@ $(document).ready(function() {
     });
 
 
- /* Home Slideshow Vegas
-  -----------------------------------------------*/
-  $(function() {
-    $('body').vegas({
-        slides: [
-            { src: 'images/gal1.jpg' },
-            { src: 'images/gal2.jpg' },
-            { src: 'images/gal3.jpg' },
-            { src: 'images/gal4.jpg' }
-        ],
-        timer: false,
-        transition: [ 'zoomIn', ],
-        animation: ['kenburns']
-    });
-  });
+
 
 
   /* Team carousel

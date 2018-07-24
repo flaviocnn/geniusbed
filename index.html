@@ -19,7 +19,7 @@ https://vegas.jaysalvat.com/
 Caption Hover Effects
 http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
 -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/animate.min.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
   	<link rel="stylesheet" href="css/component.css">
@@ -33,7 +33,7 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300' rel='stylesheet' type='text/css'>
 	
 </head>
-<body id="top" data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
+<body id="top" data-spy="scroll" data-offset="50" data-target="#navbarNav">
 
 
 <!-- Preloader section -->
@@ -55,29 +55,29 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
 
 <!-- Navigation section  -->
 
-  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
 
-      <div class="navbar-header">
-        <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="icon icon-bar"></span>
-          <span class="icon icon-bar"></span>
-          <span class="icon icon-bar"></span>
-        </button>
-        <a href="#top" class="navbar-brand smoothScroll"><img src="images/logo3.png" class="logo"></a>
+  <nav class="navbar navbar-expand-lg navbar-default fixed-top" role="navigation">
+      <a href="#top" class="navbar-brand smoothScroll"><img src="images/logo3.png" class="logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav navbar-right">
+          <li class="nav-item active">
+            <a class="nav-link" href="#top">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about"><span>About</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery"><span>Products</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact"><span>Contact</span></a>
+          </li>
+        </ul>
       </div>
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#top" class="smoothScroll"><span>Home</span></a></li>
-            <li><a href="#about" class="smoothScroll"><span>About</span></a></li>
-            <li><a href="#gallery" class="smoothScroll"><span>Products</span></a></li>
-            <li><a href="#contact" class="smoothScroll"><span>Contact</span></a></li>
-          </ul>
-       </div>
-
-    </div>
-  </div>
-
+    </nav>
 
 <!-- Home section -->
 
@@ -86,7 +86,7 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
   <div class="container">
     <div class="row">
 
-      <div class="col-md-offset-1 col-md-10 col-sm-12 wow fadeInUp" data-wow-delay="0.3s">
+      <div class="col-md-10 offset-md-1 col-sm-12 wow fadeInUp" data-wow-delay="0.3s">
         <h1 class="wow fadeInUp" data-wow-delay="0.6s">Benvenuti nel Centro Materassi GeniusBed</h1>
         <p class="wow fadeInUp italic" data-wow-delay="0.9s">Lasciate che il vostro materasso si prenda cura di voi.</p>
         <a href="#about" class="learnmore btn btn-success btn-lg wow fadeInUp" data-wow-delay="1.2s" data-scroll="#about">Learn more</a>
@@ -111,13 +111,13 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
       </div>
 
       <div class="col-md-3 col-sm-4 wow fadeInUp about-img" data-wow-delay="0.6s">
-        <img src="images/SEDE.jpg" class="img-responsive img-circle" alt="About">
+        <img src="images/SEDE.jpg" class="img-responsive rounded-circle" alt="About">
       </div>
     </div>
 
     <div class="row">
         <div class="col-md-3 col-sm-4 wow fadeInUp about-img" data-wow-delay="0.6s">
-            <img id="imgLeft"src="images/mat.jpg" class="img-responsive img-circle" alt="About">
+            <img id="imgLeft"src="images/mat.jpg" class="img-responsive rounded-circle" alt="About">
           </div>
       <div class="col-md-9 col-sm-8 wow fadeInUp" data-wow-delay="0.2s">
         <div class="about-thumb">
@@ -136,7 +136,7 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
         </div>
       </div>
       <div class="col-md-3 col-sm-4 wow fadeInUp about-img" data-wow-delay="0.6s">
-        <img src="images/Rullocatas.jpg" class="img-responsive img-circle" alt="About">
+        <img src="images/Rullocatas.jpg" class="img-responsive rounded-circle" alt="About">
       </div>
     </div>
       
@@ -151,9 +151,9 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
       </div>
 
       <!-- team carousel -->
-      <div id="team-carousel" class="owl-carousel">
+      <div id="team-carousel" class="owl-carousel row">
 
-      <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.4s">
+      <div class="item wow fadeInUp" data-wow-delay="0.4s">
         <div class="team-thumb">
           <div class="image-holder">
             <img src="images/logo-dorsal.png" class="partner img-responsive" alt="Mary">
@@ -163,7 +163,7 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
         </div>
       </div>
 
-      <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
+      <div class="item wow fadeInUp" data-wow-delay="0.6s">
         <div class="team-thumb">
           <div class="image-holder">
             <img src="images/vefer-logo.png" class="partner img-responsive " alt="Jack">
@@ -173,7 +173,7 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
         </div>
       </div>
 
-      <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
+      <div class="item wow fadeInUp" data-wow-delay="0.8s">
         <div class="team-thumb">
           <div class="image-holder">
             <img src="images/somnium.gif" class="partner img-responsive " alt="Linda">
@@ -183,50 +183,50 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
         </div>
       </div>
 
-      <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
+      <div class="item wow fadeInUp" data-wow-delay="0.8s">
         <div class="team-thumb">
           <div class="image-holder">
-            <img src="images/team-img4.jpg" class="img-responsive img-circle" alt="Sandy">
+            <img src="images/team-img4.jpg" class="img-responsive rounded-circle" alt="Sandy">
           </div>
           <h2 class="heading">Sandy, Director</h2>
           <p class="description">Curabitur vulputate euismod neque et tincidunt.</p>
         </div>
       </div>
 
-      <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
+      <div class="item wow fadeInUp" data-wow-delay="0.8s">
         <div class="team-thumb">
           <div class="image-holder">
-            <img src="images/team-img5.jpg" class="img-responsive img-circle" alt="Lukia">
+            <img src="images/team-img5.jpg" class="img-responsive rounded-circle" alt="Lukia">
           </div>
           <h2 class="heading">Lukia, Fashion</h2>
           <p class="description">Maecenas sed diam eget risus varius blandit sit.</p>
         </div>
       </div>
 
-      <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
+      <div class="item wow fadeInUp" data-wow-delay="0.8s">
         <div class="team-thumb">
           <div class="image-holder">
-            <img src="images/team-img6.jpg" class="img-responsive img-circle" alt="George">
+            <img src="images/team-img6.jpg" class="img-responsive rounded-circle" alt="George">
           </div>
           <h2 class="heading">George, Admin</h2>
           <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
         </div>
       </div>
 
-      <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
+      <div class="item wow fadeInUp" data-wow-delay="0.8s">
         <div class="team-thumb">
           <div class="image-holder">
-            <img src="images/team-img7.jpg" class="img-responsive img-circle" alt="Day">
+            <img src="images/team-img7.jpg" class="img-responsive rounded-circle" alt="Day">
           </div>
           <h2 class="heading">Day, Accountant</h2>
           <p class="description">Maecenas sed diam eget risus varius blandit sit.</p>
         </div>
       </div>
 
-      <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
+      <div class="item wow fadeInUp" data-wow-delay="0.8s">
         <div class="team-thumb">
           <div class="image-holder">
-            <img src="images/team-img8.jpg" class="img-responsive img-circle" alt="Lynn">
+            <img src="images/team-img8.jpg" class="img-responsive rounded-circle" alt="Lynn">
           </div>
           <h2 class="heading">Lynn, Marketing</h2>
           <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
@@ -245,16 +245,15 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
 
 <section id="gallery">
   <div class="container">
-    <div class="row">
 
-      <div class="col-md-offset-2 col-md-8 col-sm-12 wow fadeInUp" data-wow-delay="0.3s">
+      <div class="offset-md-2 col-md-8 col-sm-12 wow fadeInUp" data-wow-delay="0.3s">
         <div class="section-title">
           <h1>Prodotti</h1>
           <p>Da oltre 15 anni vi facciamo dormire e riposare: il vostro materasso deve offrire un sonno rigenerante.</p>
         </div>
       </div>
 
-      <ul class="grid cs-style-4">
+      <ul class="grid cs-style-4 row">
         <li class="col-md-6 col-sm-6">
           <figure>
             <div><img src="images/materassi.jpg" alt="image 1"></div>
@@ -299,8 +298,6 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
           </figure>
         </li>
       </ul>
-
-    </div>
   </div>
 </section>
 
@@ -311,14 +308,15 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
   <div class="container">
     <div class="row">
 
-       <div class="col-md-offset-1 col-md-10 col-sm-12">
+       <div class="offset-md-1 col-md-10 col-sm-12">
 
-        <div class="col-lg-offset-1 col-lg-10 section-title wow fadeInUp" data-wow-delay="0.4s">
+        <div class="offset-lg-1 col-lg-10 section-title wow fadeInUp" data-wow-delay="0.4s">
           <h1>Contattaci</h1>
           <p>Nunc suscipit ante in lectus laoreet, nec pharetra diam dictum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
         </div>
 
         <form action="#" method="post" class="wow fadeInUp" data-wow-delay="0.8s">
+          <div class="row">
           <div class="col-md-6 col-sm-6">
             <input name="name" type="text" class="form-control" id="name" placeholder="Name">
           </div>
@@ -328,9 +326,10 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
           <div class="col-md-12 col-sm-12">
             <textarea name="message" rows="6" class="form-control" id="message" placeholder="Message"></textarea>
           </div>
-          <div class="col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6">
+          <div class="offset-md-3 col-md-6 offset-sm-3 col-sm-6">
             <input type="submit" class="form-control" value="SEND MESSAGE">
           </div>
+        </div>
         </form>
 
       </div>
@@ -370,8 +369,8 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
 <a href="#" class="go-top"><i class="fa fa-angle-up"></i></a>
 
 <!-- Javascript  -->
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
 <script src="js/vegas.min.js"></script>
 <script src="js/modernizr.custom.js"></script>
 <script src="js/toucheffects.js"></script>
@@ -382,5 +381,21 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
 <script>
   smoothScroll.init();
   </script>
+  <script>
+   /* Home Slideshow Vegas
+  -----------------------------------------------*/
+  $(function() {
+    $('body').vegas({
+        slides: [
+            { src: 'images/gal1.jpg' },
+            { src: 'images/gal2.jpg' },
+            { src: 'images/gal3.jpg' },
+            { src: 'images/gal4.jpg' }
+        ],
+        timer: false,
+        transition: [ 'zoomIn', ],
+        animation: ['kenburns']
+    });
+  });</script>
 </body>
 </html>
