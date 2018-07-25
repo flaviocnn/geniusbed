@@ -826,7 +826,7 @@ section#Materassi{
 .grid-sizer, .grid-item { 
   width: 25%;
     height: 25em;
-    margin-right: 14px;
+    margin-bottom: 14px;
 } 
 .grid-item--width2 { width: 50%; }
 @media (max-width: 650px) {
@@ -861,4 +861,34 @@ section#Materassi{
 }
 li.nav-item.nav-filter.shadow-sm.rounded.pressed {
   background: #ff9303;
+}
+
+.modal-content {
+  height: 80vh;
+  border-radius: 0.3px;
+  border: none;
+}
+
+/* Important part */
+.modal-dialog{
+  overflow-y: initial !important;
+  max-width: unset;
+  width: 80vw;
+}
+.modal-body{
+  height: 30rem;
+  overflow-y: auto;
+  padding: 2rem;
+}
+
+.modal-header {
+  text-align: center;
+  display: inline;
+}
+.modal-title{
+  display: initial;
+}
+img.pimg {
+  height: 100%;
+  width: inherit;
 }

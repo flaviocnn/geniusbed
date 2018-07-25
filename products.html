@@ -55,7 +55,7 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
   <!-- Modal -->
   <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
+      <div class="modal-content shadow-lg">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalCenterTitle"></h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -63,11 +63,17 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
           </button>
         </div>
         <div class="modal-body">
-          <p></p>
+          <div class="row">
+            <div class="col-md-4">
+              <img class="pimg" src="">
+            </div>
+            <div class="col-md-8">
+                <p class="pdesc"></p>
+            </div>
+          </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-secondary bg-orange" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
@@ -148,7 +154,9 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
                         <figcaption>
                           <h1>Materassi</h1>
                           <small>Cum sociis natoque penatibus et magnis dis parturient montes.</small>
-                          <a href="#" data-toggle="modal" data-target="#exampleModalCenter" data-pName="Materasso1" data-pdescription="Descrizione materasso">Scopri</a>
+                          <a href="#" data-toggle="modal" data-target="#exampleModalCenter" 
+                          data-pName="Materasso1" data-pdescription="Descrizione materasso"
+                          data-img="images/materassi.jpg">Scopri</a>
                         </figcaption>
                       </figure>
                     </div>
@@ -389,7 +397,9 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
     percentPosition: true,
     masonry: {
       // use outer width of grid-sizer for columnWidth
-      columnWidth: '.grid-sizer'
+      columnWidth: '.grid-sizer',
+      gutter: 10
+
     }
   });
   // filter items on button click
@@ -397,11 +407,14 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
     var filterValue = $(this).attr('data-filter');
     $grid.isotope({ filter: filterValue });
   });
-  $('.nav-tabs').on( 'click', 'a', function() {
-    var filterValue = $(this).attr('data-filter');
-    $grid.isotope({ filter: filterValue });
-  });
+  
 </script>
+<script>
+    var $grid = $('.isogrid');
+    $('.nav-tabs').on( 'click', 'a', function() {
+      $grid.isotope({ filter: '*' });
+    });
+  </script>
 <script>
     $(document).ready(function(){
       $('.flex-column li').click(function() {
@@ -417,9 +430,11 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
     // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
     // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
     var desc = button.data('pdescription');
+    var img = button.data('img');
     var modal = $(this);
     modal.find('.modal-title').text(recipient);
-    modal.find('.modal-body').text(desc);
+    modal.find('.pdesc').text(desc);
+    modal.find('.pimg').attr('src',img);
   })
   </script>
 </body>
