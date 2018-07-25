@@ -444,12 +444,8 @@ ul.navbar-nav.navbar-right{
     Home Section              
 -----------------------------------------*/
 .logo{
-  height: 80px;
+  height: 4em;
   width: auto;
-  position: relative;
-  top: -112%;
-  left: 0;
-  margin-bottom: 0.25em;
 }
 .learnmore{
   background: 0;
@@ -761,7 +757,12 @@ footer {
   #about .team-thumb {
     margin-top: 32px;
   }
-
+  .grid-sizer, .grid-item { 
+    width: 47%!important;
+  } 
+  .logo{
+    height: 3em!important;
+  }
 }
 
 
@@ -810,7 +811,16 @@ footer {
 
 }
 
+@media only screen and (max-width: 600px) {
+  .tab-content {
+    padding: 0!important;
+  }
 
+  .grid-sizer, .grid-item { 
+    width: 95%!important;
+    margin-top: 1em;
+  } 
+}
 
 section#Materassi{
   margin-top: 8em;
@@ -824,17 +834,12 @@ section#Materassi{
  
 }
 .grid-sizer, .grid-item { 
-  width: 25%;
+  width: 32%;
     height: 25em;
     margin-bottom: 14px;
 } 
 .grid-item--width2 { width: 50%; }
-@media (max-width: 650px) {
-  .grid-sizer, .grid-item { 
-    width: 95%;
-    margin-top: 1em;
-  } 
-}
+
 .tab-content {
   padding: 4em;
   background: #f3f3f36b;
@@ -852,6 +857,10 @@ section#Materassi{
 .nav-filter a{
   font-family: 'Amiko', sans-serif;
   color: white;
+}
+.nav-flink{
+  display: block;
+padding: .5rem 1rem;
 }
 #myTab{
   border-bottom: 1px solid #cacaca66;
